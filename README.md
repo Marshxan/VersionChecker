@@ -26,12 +26,12 @@ local function CheckVersion()
     	local advice = "^1You Are Currently Running A Outdated Version Of "..resourcename.."\n "..howto.." ^7"
     	if newestVersion:gsub("%s+", "") == currentVersion:gsub("%s+", "") 
         then advice = '^6You are running the latest version.^7'
-            else 
-                print("")
-                print("")
-                print("^3Version Check^7: ^2Current^7: "..currentVersion.." ^2Latest^7: "..newestVersion)
-                print("")
-                print("")
+        else 
+            print("")
+            print("")
+            print("^3Version Check^7: ^2Current^7: "..currentVersion.." ^2Latest^7: "..newestVersion)
+            print("")
+            print("")
         end
         print("")
     	print(advice)
